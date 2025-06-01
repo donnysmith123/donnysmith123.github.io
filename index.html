@@ -65,6 +65,17 @@
       position: relative;
     }
 
+    .dropdown-toggle {
+      color: white;
+      font-weight: bold;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown:hover .dropdown-toggle {
+      color: #ffe082;
+    }
+
     .dropdown-content {
       display: none;
       position: absolute;
@@ -128,6 +139,11 @@
       color: #004d40;
     }
 
+    section p {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -184,7 +200,7 @@
     <nav>
       <a href="#about">About</a>
       <div class="dropdown">
-        <a href="#services">Services ▾</a>
+        <span class="dropdown-toggle">Services ▾</span>
         <div class="dropdown-content">
           <a href="storm.html">Storm Services</a>
           <a href="#services">All Services</a>
