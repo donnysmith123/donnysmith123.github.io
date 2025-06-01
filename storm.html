@@ -13,7 +13,6 @@
       color: #333;
     }
 
-    /* HEADER */
     header {
       background: url('images/Storm_Hero_Shot.png') no-repeat center center/cover;
       height: 60vh;
@@ -74,13 +73,13 @@
       border-radius: 5px;
       font-size: 1em;
       text-decoration: none;
+      display: inline-block;
     }
 
     .cta-button:hover {
       background-color: #00695c;
     }
 
-    /* CONTENT SECTIONS */
     section {
       padding: 80px 20px;
       max-width: 1100px;
@@ -115,6 +114,11 @@
       max-width: 500px;
     }
 
+    .download-section {
+      text-align: center;
+      margin-top: 60px;
+    }
+
     footer {
       background: #00303f;
       color: white;
@@ -133,17 +137,6 @@
 </head>
 <body>
 
-
-  <section>
-    <h2 style="text-align:center;">Download Sample Report</h2>
-    <div style="text-align:center; margin-top: 20px;">
-      <a href="pdfs/Sample_Storm_Inspection_Report.pdf" download class="cta-button">
-        📄 Download Example Storm Inspection Report
-      </a>
-    </div>
-  </section>
-
-  
   <header>
     <div class="logo">INLET POINT ENGINEERING</div>
     <nav>
@@ -164,6 +157,13 @@
         <p>Using high-resolution drone imagery and engineering expertise, we deliver reliable evaluations and fast turnaround reports — helping you recover quicker and safer.</p>
       </div>
     </div>
+  </section>
+
+  <section class="download-section">
+    <h2>Download Sample Report</h2>
+    <a href="pdfs/Sample_Storm_Inspection_Report.pdf" download class="cta-button">
+      📄 Download Example Storm Inspection Report
+    </a>
   </section>
 
   <footer>
