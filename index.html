@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inlet Point Engineering</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      color: #00303f;
-      background-color: #f9f9f9;
-      scroll-behavior: smooth;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; }
     header {
       background: url('Jupiter-Inlet-Header.jpg') no-repeat center center/cover;
       height: 100vh;
@@ -25,84 +15,122 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: white;
       text-align: center;
+      color: white;
     }
+    header .logo {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      font-size: 1.5em;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffe082; }
     header h1 {
       font-size: 3em;
+      margin-top: 100px;
       background-color: rgba(0,0,0,0.5);
       padding: 10px 20px;
       border-radius: 10px;
     }
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a {
-      text-decoration: none;
-      color: #00303f;
-      font-weight: 600;
-    }
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       max-width: 900px;
       margin: auto;
     }
     section h2 {
       font-size: 2em;
       margin-bottom: 20px;
-      border-bottom: 2px solid #00798c;
-      display: inline-block;
+      color: #004d40;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     footer {
-      text-align: center;
-      padding: 20px;
       background: #00303f;
       color: white;
+      text-align: center;
+      padding: 30px 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Inlet Point Engineering</h1>
+    <div class="logo">INLET POINT</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Engineering Coastal Excellence</h1>
   </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>We specialize in dock inspections, permitting, and marine engineering design, serving coastal clients with integrity and technical excellence. Based near the iconic Jupiter Lighthouse, our mission is to preserve the waterfront while enabling safe, sustainable access and structures.</p>
+    <p>Inlet Point Engineering is a Florida-based firm specializing in dock inspections, marine design, and permitting. With deep roots in coastal infrastructure, we deliver safe, sustainable solutions for waterfront development.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Comprehensive Dock Inspections</li>
-      <li>Marine & Coastal Engineering Design</li>
-      <li>Permit Consulting & Application Support</li>
-      <li>Waterfront Planning & Resilience Consulting</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Dock Inspections</h3>
+        <p>Certified structural inspections for residential and commercial docks.</p>
+      </div>
+      <div class="service-card">
+        <h3>Engineering Design</h3>
+        <p>Innovative, code-compliant marine and coastal designs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Permitting</h3>
+        <p>Expert guidance through local, state, and federal permitting processes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Waterfront Consulting</h3>
+        <p>Coastal resilience and planning for property owners and municipalities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Professional, punctual, and highly knowledgeable. Inlet Point made our permitting process smooth and stress-free." – Client A</p>
+    <p>"They inspected our old dock and designed a perfect replacement. Highly recommend!" – Client B</p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:info@inletpointeng.com">info@inletpointeng.com</a></p>
     <p>Phone: (123) 456-7890</p>
-    <p>Located near Jupiter Inlet, Florida</p>
+    <p>Located in Jupiter, Florida</p>
   </section>
 
   <footer>
-    &copy; 2025 Inlet Point Engineering. Built with passion and salt air.
+    <p>&copy; 2025 Inlet Point Engineering. Site inspired by Jupiter Inlet. Built with pride and precision.</p>
   </footer>
 </body>
 </html>
