@@ -1,65 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inlet Point Engineering</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background: #003366;
-      color: white;
-      padding: 1.5rem;
+      background-color: #e0f7fa;
+      padding: 20px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #00796b;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 60px 20px;
       max-width: 800px;
       margin: auto;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+    section h2 {
+      color: #004d40;
+      border-bottom: 2px solid #004d40;
+      padding-bottom: 10px;
     }
-    h1, h2 {
-      color: #003366;
+    .services, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service, .testimonial {
+      flex: 1 1 45%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .services, .testimonials {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Inlet Point Engineering</h1>
-    <p>Coastal, Structural & Marine Engineering Services</p>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Us</h2>
-    <p>Inlet Point Engineering is a boutique coastal engineering firm based in Jupiter, Florida. We specialize in dock inspections, seawall evaluations, and marine structure engineering and permitting services.</p>
+    <p>Inlet Point Engineering specializes in dock inspections, engineering design, and permitting services. With a commitment to coastal integrity and sustainable solutions, we ensure every project meets the highest standards of safety and excellence.</p>
+  </section>
 
+  <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Dock and Seawall Inspections</li>
-      <li>Permit-Ready Engineering Drawings</li>
-      <li>Structural Analysis for Marine Construction</li>
-      <li>Drone and Underwater Video Documentation</li>
-    </ul>
+    <div class="services">
+      <div class="service">
+        <h3>Dock Inspections</h3>
+        <p>Comprehensive assessments to ensure structural integrity and compliance with regulations.</p>
+      </div>
+      <div class="service">
+        <h3>Engineering Design</h3>
+        <p>Customized engineering solutions tailored to your waterfront needs.</p>
+      </div>
+      <div class="service">
+        <h3>Permitting Assistance</h3>
+        <p>Expert guidance through the permitting process to streamline your project timeline.</p>
+      </div>
+      <div class="service">
+        <h3>Coastal Consulting</h3>
+        <p>Strategic advice for sustainable and resilient coastal development.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Contact</h2>
-    <p>Email: info@inletpointengineering.com<br>
-       Phone: (561) 555-1234</p>
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Inlet Point Engineering provided exceptional service and expertise. Their team made the permitting process seamless."</p>
+        <p><strong>- Alex M.</strong></p>
+      </div>
+      <div class="testimonial">
+        <p>"Their attention to detail in dock inspections gave us peace of mind. Highly recommend their services."</p>
+        <p><strong>- Jamie L.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to start your project? Reach out to us for a consultation.</p>
+    <p>Email: <a href="mailto:info@inletpointeng.com">info@inletpointeng.com</a></p>
+    <p>Phone: (123) 456-7890</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Inlet Point Engineering. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
