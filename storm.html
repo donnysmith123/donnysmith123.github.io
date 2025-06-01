@@ -6,113 +6,113 @@
   <title>Storm Services | Inlet Point Engineering</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      margin: 0;
+    }
     header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Hurricane_Damage_to_Boats_and_Docks.jpg/1024px-Hurricane_Damage_to_Boats_and_Docks.jpg') no-repeat center center/cover;
+      background: url('images/storm_web_hero.jpg') no-repeat center center/cover;
       height: 50vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
       color: white;
     }
     header h1 {
       font-size: 2.5em;
       background-color: rgba(0,0,0,0.5);
-      padding: 15px 25px;
+      padding: 20px;
       border-radius: 10px;
-    }
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ffe082;
     }
     section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
+      text-align: center;
       color: #004d40;
-      font-size: 2em;
-      margin-bottom: 20px;
-    .image-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      margin-bottom: 30px;
     }
-    
-    .image-gallery img {
+    .drone-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .drone-section img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .drone-section p {
+      max-width: 500px;
+      font-size: 1.1em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .gallery img {
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
+    .caption {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
     footer {
       background: #00303f;
       color: white;
       text-align: center;
       padding: 30px 20px;
-      margin-top: 60px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Storm Prep & Post-Storm Inspections</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Storm Preparedness & Post-Storm Inspections</h1>
   </header>
 
   <section>
-    <h2>Before the Storm</h2>
-    <p>Preparation is everything. Inlet Point Engineering provides proactive inspections of docks, lifts, and seawalls before major storms or hurricanes. We document your structure’s pre-storm condition, offering peace of mind and valuable documentation for your insurance provider.</p>
-  </section>
-
-  <section>
-    <h2>After the Storm</h2>
-    <p>We respond quickly. Within 24–72 hours of the storm’s passing, our team is on-site conducting structural inspections, capturing high-resolution drone footage, and preparing professional reports tailored for insurance claims. These include:</p>
-    <ul>
-      <li>Detailed damage assessment</li>
-      <li>Drone photography and video</li>
-      <li>Code compliance review</li>
-      <li>Stamped engineer letters (if required)</li>
-    </ul>
+    <h2>Storm Preparedness</h2>
+    <div class="drone-section">
+      <img src="images/storm_web_drone.jpg" alt="Drone inspection" />
+      <p>We offer thorough inspections of docks and seawalls before and after storms to help document conditions, evaluate damage, and support insurance claims. Our team uses high-resolution drone imagery and expert evaluations to provide fast, reliable reports when you need them most.</p>
+    </div>
   </section>
 
   <section>
     <h2>Sample Storm Damage Photos</h2>
-    <div class="image-gallery">
-      <img src="images/storm1.jpg" alt="Boats damaged at dock" />
-      <img src="images/storm2.jpg" alt="Collapsed pier" />
-      <img src="images/storm3.jpg" alt="Marina debris scattered" />
-      <img src="images/storm4.jpg" alt="Boat washed ashore near house" />
+    <div class="gallery">
+      <div>
+        <img src="images/storm_web_damage1.jpg" alt="Docked boats damaged" />
+        <div class="caption">Docked boats severely damaged</div>
+      </div>
+      <div>
+        <img src="images/storm_web_damage2.jpg" alt="Collapsed pier" />
+        <div class="caption">Pier collapsed from surge</div>
+      </div>
+      <div>
+        <img src="images/storm_web_damage3.jpg" alt="Seawall breached" />
+        <div class="caption">Seawall breached; boat displaced</div>
+      </div>
     </div>
   </section>
 
-
-  <section id="contact">
-    <h2>Request a Storm Inspection</h2>
-    <p>Email us directly at <a href="mailto:info@inletpointengineering.com">info@inletpointengineering.com</a> or fill out the contact form on our <a href="index.html#contact">main page</a>.</p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Inlet Point Engineering. Ready when your dock needs us most.</p>
+    <p>&copy; 2025 Inlet Point Engineering. Protecting your waterfront, one inspection at a time.</p>
   </footer>
 
 </body>
